@@ -2,7 +2,7 @@ import cv2 as cv
 import numpy as np
 
 # Load the image
-image = cv.imread('input.png', cv.IMREAD_GRAYSCALE)
+image = cv.imread('girl.png', cv.IMREAD_GRAYSCALE)
 
 # Create Filter Sobel in Spatial Domain
 sobel_x = np.array([[-1, 0, 1],
@@ -64,15 +64,15 @@ filtered_image_x = np.uint8(filtered_image_x)
 filtered_image_y = np.uint8(filtered_image_y)
 
 cv.imshow("input image in gray scale",image)
-cv.waitKey(0)
+
 cv.imshow("image_magnitude",image_magnitude)
-cv.waitKey(0)
+
 cv.imshow("magnitude_sobelx",sobel_x_magnitude)
-cv.waitKey(0)
+
 cv.imshow("magnitude_sobely",sobel_y_magnitude)
-cv.waitKey(0)
+
 cv.imshow('Sobel X', filtered_image_x)
-cv.waitKey(0)
+
 cv.imshow('Sobel Y', filtered_image_y)
 cv.waitKey(0)
 cv.destroyAllWindows()
