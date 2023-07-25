@@ -12,9 +12,9 @@ print("laplacian type",laplacian.dtype)
 print("sobel x",sobelx.dtype)
 print("sobel y",sobely.dtype)
 
-#laplacian = cv.normalize(laplacian,None,0,255,cv.NORM_MINMAX,cv.CV_8U)
-#sobelx = cv.normalize(sobelx,None,0,255,cv.NORM_MINMAX,cv.CV_8U)
-#sobely = cv.normalize(sobely,None,0,255,cv.NORM_MINMAX,cv.CV_8U)
+laplacian = cv.normalize(laplacian,None,0,255,cv.NORM_MINMAX,cv.CV_8U)
+sobelx = cv.normalize(sobelx,None,0,255,cv.NORM_MINMAX,cv.CV_8U)
+sobely = cv.normalize(sobely,None,0,255,cv.NORM_MINMAX,cv.CV_8U)
 
 #cv.imshow("output_laplace.png",laplacian)
 cv.imshow("sobelx.png",sobelx)

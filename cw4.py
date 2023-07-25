@@ -2,7 +2,7 @@ import cv2 as cv
 import numpy as np
 
 # Load the image
-image = cv.imread('girl.png', cv.IMREAD_GRAYSCALE)
+image = cv.imread('input.png', cv.IMREAD_GRAYSCALE)
 
 # Create Filter Sobel in Spatial Domain
 sobel_x = np.array([[-1, 0, 1],

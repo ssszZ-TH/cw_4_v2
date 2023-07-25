@@ -1,0 +1,1 @@
+image_freq_shifted * sobel_x_magnitud
