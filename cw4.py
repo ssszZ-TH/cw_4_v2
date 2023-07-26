@@ -25,6 +25,7 @@ sobel_y_freq_shifted = np.fft.fftshift(sobel_y_freq)
 # Fourier Transform of the input image
 # เเปลง รุป เป็น frequency domain
 image_freq = np.fft.fft2(image)
+#shift frequency domain เป็น
 image_freq_shifted = np.fft.fftshift(image_freq)
 
 ## ทำให้รูปพร้อม เเสดง #########################################
@@ -75,4 +76,3 @@ cv.imshow('Sobel X', filtered_image_x)
 
 cv.imshow('Sobel Y', filtered_image_y)
 cv.waitKey(0)
-cv.destroyAllWindows()
