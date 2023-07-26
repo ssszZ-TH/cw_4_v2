@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Load the image
-image = cv2.imread('girl.png', cv2.IMREAD_GRAYSCALE)
+image = cv2.imread('pajama.jpg', cv2.IMREAD_GRAYSCALE)
 
 # Create Sobel Filter X (Horizontal)
 sobel_x = np.array([[-1, 0, 1],
